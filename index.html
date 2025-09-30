@@ -2,16 +2,18 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Медвежонок Тамагочи</title>
-  <base href="/tamagotchi/">
-  <script type="module" crossorigin src="/tamagotchi/assets/index-C7xEUJEL.js"></script>
+  <!-- Removed base tag to fix 404 errors with vite base config -->
+  <!-- <base href="/tamagotchi/"> -->
+  <script type="module" crossorigin src="/assets/index-c0JViF_m.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B7LMr3MX.css">
 </head>
 <body>
   <main class="game-container">
     <figure class="bear">
       <div id="eatingAnimation" class="eating-animation"></div>
-      <img src="/tamagotchi/images/bear-bg.png" alt="Медвежонок" class="bear-image" />
+      <img src="images/bear-bg.png" alt="Медвежонок" class="bear-image">
       <figcaption class="speech-bubble" id="phrase">
         Акции бы...
       </figcaption>
@@ -19,16 +21,27 @@
 
     <nav class="nav">
       <button id="main-menu" class="nav-button">
-        <img src="/tamagotchi/images/bear-button.svg" alt="Медведь" />
+        <img src="images/bear-button.svg" alt="Медведь">
       </button>
       <button id="feedButton" aria-label="Покормить медведя" class="nav-button" disabled>
-        <img src="/tamagotchi/images/fish-icon.png" alt="Рыбка" />
+        <img src="images/fish-icon.png" alt="Рыбка">
       </button>
       <button id="gamepad" class="nav-button">
-        <img src="/tamagotchi/images/gamepad.svg" alt="Джостик" />
+        <img src="images/gamepad.svg" alt="Джостик">
       </button>
     </nav>
-    <section></section>
+    <section>
+
+    </section>
+
   </main>
+
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <div id="gameCanvas" class="game-canvas"></div>
+      <button id="closeModal" class="close-button">×</button>
+    </div>
+  </div>
+
 </body>
 </html>
