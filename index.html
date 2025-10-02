@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Медвежонок Тамагочи</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/animations.css">
+</head>
+<body>
+  <main class="game-container">
+    <figure class="bear">
+      <div id="eatingAnimation" class="eating-animation"></div>
+      <img src="./images/bear-bg.png" alt="Медвежонок" class="bear-image">
+      <figcaption class="speech-bubble" id="phrase">
+        Акции бы...
+      </figcaption>
+    </figure>
+
+    <nav class="nav">
+      <button id="main-menu" class="nav-button">
+        <img src="./images/bear-button.svg" alt="Медведь">
+      </button>
+      <button id="feedButton" aria-label="Покормить медведя" class="nav-button" disabled>
+        <img src="./images/fish-icon.png" alt="Рыбка">
+      </button>
+      <button id="gamepad" class="nav-button">
+        <img src="./images/gamepad.svg" alt="Джостик">
+      </button>
+    </nav>
+    <section>
+
+    </section>
+
+  </main>
+
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <div id="gameCanvas" class="game-canvas">        
+      </div>
+      <button id="closeModal" class="close-button">×</button>
+    </div>
+  </div>
+
+  <div id="bonusModal" class="modal">
+    <div class="modal-content">
+      <div id="bonusCanvas" class="bonus-canvas">
+      </div>
+      <button id="closeBonusModal" class="close-button">×</button>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

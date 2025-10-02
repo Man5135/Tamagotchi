@@ -1,0 +1,29 @@
+@font-face{
+  font-family: "Gazprombank";
+  src: local('Gazprombank'),
+  url(../fonts/Gazprombank_Sans_Regular.woff2) format('woff2'),
+  url(../fonts/Gazprombank_Sans_Regular.woff) format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Gazprombank";
+  src: local('Gazprombank Bold'),
+  url(../fonts/Gazprombank_Sans_Bold.woff2) format('woff2'),
+  url(../fonts/Gazprombank_Sans_Bold.woff) format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Gazprombank";
+  src: local('Gazprombank Italic'),
+  url(../fonts/Gazprombank_Sans_Italic.woff2) format('woff2'),
+  url(../fonts/Gazprombank_Sans_Italic.woff) format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
